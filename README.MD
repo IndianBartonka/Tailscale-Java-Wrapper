@@ -69,7 +69,7 @@ final AttributesResponse attributesResponse = client.getAttributes(deviceId);
 System.out.println("Attributes: " + attributesResponse);
 
 // Example of setting an attribute on the device
-final AttributesRequest attributesRequest = new AttributesRequest("value", "my_value");
+final AttributesRequest attributesRequest = new AttributesRequest("value", "2022-12-01T05:23:30Z");
 final boolean isSet = client.setAttributes(deviceId, "custom:Koo", attributesRequest);
 System.out.println("Attribute set: " + isSet);
 
