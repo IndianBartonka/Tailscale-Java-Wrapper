@@ -39,3 +39,4 @@ out/
 .idea/uiDesigner.xml
 .idea/compiler.xml
 .idea/vcs.xml
+src/main/java/pl/indianbartonka/tailscale/Test.java
