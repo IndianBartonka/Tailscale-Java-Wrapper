@@ -9,6 +9,24 @@ This example demonstrates how to use the `TailscaleClient` in Java to interact w
 - A Tailscale account.
 - A valid Tailscale [API key](https://login.tailscale.com/admin/settings/keys).
 
+# Dependencies
+### Maven `pom.xml`
+
+```xml
+<repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+</repository>
+```
+
+```xml
+<dependency>
+    <groupId>com.github.IndianBartonka</groupId>
+    <artifactId>Tailscale-Java-Wrapper</artifactId>
+    <version>Tag</version>
+</dependency>
+```
+
 ## Example Usage
 
 ```java
@@ -66,3 +84,4 @@ System.out.println(client.getRoutes(deviceId));
 
 // Example of deleting a device
 System.out.println("Device deleted: " + client.deleteDevice(deviceId));
+```
