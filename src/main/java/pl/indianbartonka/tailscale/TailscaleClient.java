@@ -33,7 +33,7 @@ public class TailscaleClient {
     private String baseUrl;
     private OkHttpClient httpClient;
     private Gson gson;
-
+//TODO: Użyj mojego wrappera zamiast okhttp aby jar był lżejszy 
     public TailscaleClient(final String organizationName, final String token) {
         this.organizationName = organizationName;
         this.token = token;
