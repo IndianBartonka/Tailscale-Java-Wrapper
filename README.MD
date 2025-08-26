@@ -1,11 +1,14 @@
 > [!IMPORTANT]
 > We currently support <br>
-> [Devices](https://tailscale.com/api#tag/devices) <br>
-> [Keys](https://tailscale.com/api#tag/keys/get/tailnet/{tailnet}/keys)
+> [Devices](https://tailscale.com/api#tag/devices)
+> and [Keys](https://tailscale.com/api#tag/keys/get/tailnet/{tailnet}/keys)
 >
 >
 
 # Tailscale Java Wrapper
+
+[![Jitpack](https://jitpack.io/v/IndianBartonka/Tailscale-Java-Wrapper.svg)](https://jitpack.io/#IndianBartonka/Tailscale-Java-Wrapper)
+
 
 A wrapper for the Tailscale API. For more information, visit the
 official [Tailscale API documentation](https://tailscale.com/api).

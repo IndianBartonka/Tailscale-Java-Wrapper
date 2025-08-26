@@ -1,6 +1,7 @@
 package pl.indianbartonka.tailscale.data.response.device;
 
 import java.util.List;
+import java.util.Map;
 
 public record Device(
         List<String> addresses,
@@ -29,4 +30,28 @@ public record Device(
         boolean updateAvailable,
         String user
 ) {
+
+    public record Latency(Double latencyMs, Boolean preferred) {
+    }
+
+    public record ClientConnectivity(
+            List<String> endpoints,
+            Map<String, Latency> latency,
+            boolean mappingVariesByDestIP,
+            ClientSupports clientSupports
+    ) {
+    }
+
+    public record ClientSupports(
+            boolean hairPinning,
+            boolean ipv6,
+            boolean pcp,
+            boolean pmp,
+            boolean udp,
+            boolean upnp
+    ) {
+    }
+
+    public record PostureIdentity(List<String> serialNumbers) {
+    }
 }
